@@ -68,6 +68,11 @@ body {
   height: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* -----------------HEADER--------------------- */
 
 .header {
@@ -166,7 +171,7 @@ body {
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -211,11 +216,6 @@ body {
 
 /* -------------------Особенности (peculiarities)------------------- */
 
-.peculiarities {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .peculiarities-list {
   display: flex;
 }
@@ -224,6 +224,17 @@ body {
 }
 .peculiarities-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.box {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .peculiarities-title {
@@ -244,7 +255,7 @@ body {
 
 /* -------------------ABOUT------------------- */
 .about {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 
 .about-title {
@@ -267,8 +278,6 @@ body {
 /* -------------------TEAM------------------- */
 .team {
   background-color: var(--team-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-main-title {
@@ -350,7 +359,51 @@ body {
   color: #ffffff;
 }
 
+/* -------------------CLIENTS------------------- */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item {
+  width: 170px;
+  height: 72px;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #afb1b8;
+}
+.clients-icon {
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 /* -------------------FOOTER------------------- */
+
 .footer {
   background-color: var(--foter-background-color);
   padding-top: 60px;
