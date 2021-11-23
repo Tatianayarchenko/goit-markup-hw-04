@@ -147,7 +147,12 @@ body {
   margin-right: 0;
 }
 
+/* .header-contact:hover,
+.header-contact:active {
+  color: var(--accent-color);
+} */
 .header-contact:hover,
+.header-contact:focus,
 .header-contact:active {
   color: var(--accent-color);
 }
@@ -378,7 +383,7 @@ body {
 }
 .clients-item {
   width: 170px;
-  height: 72px;
+  height: 92px;
 }
 
 .clients-item + .clients-item {
@@ -415,6 +420,7 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -478,7 +484,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-footer-color);
-  padding-top: 12px;
   margin-bottom: 20px;
 }
 .footer-sosial-list {
